@@ -34,7 +34,7 @@ function fetchReadings() {
       logContainer.textContent = JSON.stringify(recent, null, 2); //change it to a string for display
     })
     .catch(error => {
-      logElement.textContent = `Error: ${error.message}`; 
+      logContainer.textContent = `Error: ${error.message}`; 
     });
 }
 
